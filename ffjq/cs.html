@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+    <title>必须付款9.9，不然进不去</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+      .qr-code-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+      }
+      .qr-code {
+        width: 80vw;
+        max-width: 300px;
+        height: 80vw;
+        max-height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        background-color: white;
+      }
+      .qr-code img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .qr-code-footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #777;
+        font-size: 16px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+      .qr-code-footer a {
+        color: #333;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 2px solid #333;
+        padding-bottom: 2px;
+        transition: all 0.3s ease;
+      }
+      .qr-code-footer a:hover {
+        color: white;
+        background-color: #333;
+      }
+      .contact-us {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .contact-us button {
+        cursor: pointer;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+      .contact-us button:hover {
+        background-color: #555;
+      }
+    </style>
+    <script>
+      function redirectToContactPage() {
+        window.location.href = "https://tm-1258567889.cos.ap-nanjing.myqcloud.com/jq.html";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>必须付款9.9，不然进不去</h1>
+    <h1>长按二维码，扫码付款</h1>
+    <div class="qr-code-container">
+      <div class="qr-code">
+        <img src="http://store.liebao.cn/admin/extensions/game/screenshot/a5233fa15decf0a4a0839a73db516ea0.png" alt="QR Code">
+      </div>
+    </div>
+    <div class="qr-code-footer">
+      <p>长按二维码，选择“识别图中二维码”进行扫码付款</p>
+    </div>
+    <div class="contact-us">
+      <button onclick="redirectToContactPage()">支付完点我</button>
+    </div>
+  </body>
+</html>
